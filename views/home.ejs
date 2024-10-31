@@ -11,7 +11,10 @@
     <h3>Enter a number 1-10 to see what you should do</h3>
     <label for="number">Number</label>
     <input type="text" name="number">
+    <button type="submit">Go</button>
     </form>
-    </body>
+    <% if(message){%>
+        <p class="result"><%= message %></p>
+        <% } %>
 </body>
 </html>
